@@ -1,0 +1,21 @@
+.header {
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(136, 135, 135);
+
+  &__button {
+    padding: 5px;
+    font-size: 32px;
+    background: rgb(26, 25, 25);
+    color: white;
+    border-radius: 10px;
+  }
+}
