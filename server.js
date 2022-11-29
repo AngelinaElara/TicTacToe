@@ -4,7 +4,8 @@ const {Server} = require('socket.io')
 const realTimeApp = require('./realTimeApp')
 
 const PORT = 5002
-const HOST = '45.83.123.102'
+// const HOST = '198.244.206.92'
+const HOST = 'localhost'
 
 const app = express()
 const server = http.createServer(app)

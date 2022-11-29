@@ -69,7 +69,7 @@ class TikTakToe{
     this.playArea[x][y] = this.currentStep
     const isFinished = this.isGameFinished()
     const result = {isFinished, x, y}
-    if (isFinished) { 
+    if (isFinished) {  
       result.winner = player
       this.isFinished = isFinished
     }

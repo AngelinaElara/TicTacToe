@@ -3,7 +3,7 @@ const MODE = 'production'
 let socket
 
 if (MODE === 'production'){
-  socket = io('ws://45.83.123.102:5002')
+  socket = io('ws://198.244.206.92:5002')
 }
 else socket = io()
 

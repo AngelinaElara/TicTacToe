@@ -55,7 +55,12 @@ const Game = () => {
     socket.emit('doStep', {roomId, x, y})
   } 
 
+  const switchStep = () => {
+    return auth.stepSymbol = auth.stepSymbol === 'x' ? '0' : 'x'
+  }
+
   const onXorY = (e) => {
+    console.log(auth.stepSymbol)
    
     if(playerSymbol !== auth.stepSymbol){
       return alert(`Now it's another player's turn`)
@@ -66,8 +71,10 @@ const Game = () => {
     } else if (playerSymbol === '0') {
       e.target.classList.add('circle')
     }
-  }
 
+    switchStep()
+  }
+  
   return (
     <>
       <div className='link'>
